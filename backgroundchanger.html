@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Background Changer</title>
+    <style>
+        body{
+            margin: 0px;
+            padding: 20px 100px;
+        }
+        h1{
+            text-align: center;
+            text-decoration: underline
+        }
+        img{ width: 100%;; 
+            height: auto;
+            margin: 0 auto;
+        }
+        p{
+            font-size: 18px;
+            text-align: justify;
+        }
+        .btn{
+            width: 20px;
+            height: 20px;
+            display: inline-block;
+            border: solid gray 2px;
+            border-radius: 50%;
+            cursor: pointer;
+        }
+        #white{
+            background-color: #ffffff;
+        }
+        #aqua{
+            background-color: #00ffff;
+        }
+        #violet{
+            background-color: #ee82ee;
+        }
+        #black{
+            background-color: #000000;
+        }
+        #colorswitch{
+            text-align: right;
+        }
+    </style>
+</head>
+<body>
+    <div id="colorswitch">
+        <span class="btn" id="white" onclick="changebg('#ffffff')"></span>
+        <span class="btn" id="aqua" onclick="changebg('#00ffff')"></span>
+        <span class="btn" id="violet" onclick="changebg('#ee82ee')"></span>
+        <span class="btn" id="black" onclick="changebg('#000000')"></span>
+    </div>
+    <h1 class="text">Hello There!!!</h1>
+    <img src="https://img.freepik.com/free-vector/group-people-illustration-set_52683-33806.jpg?w=2000" alt="">
+    <p class="text">
+        Lorem, ipsum dolor sit amet consectetur adipisicing elit. Eligendi non recusandae consequatur odit ab ipsa cum iusto eveniet labore rem nemo pariatur ex provident voluptatum quis minus, dignissimos sit a neque corrupti dolores illum debitis doloremque cupiditate! Vero aut, qui deleniti tempora necessitatibus magni adipisci excepturi quasi, eligendi dolor officia ad, et officiis debitis in alias! Esse magni sapiente quidem quisquam deleniti eum iusto? Non magnam, error, eaque praesentium nostrum enim atque numquam adipisci expedita deleniti Lorem ipsum dolor sit amet consectetur adipisicing elit. Distinctio alias consectetur nostrum iure labore amet necessitatibus, in dolorem suscipit similique reiciendis deserunt saepe delectus quas iusto quibusdam sapiente at inventore minus nemo ratione! Incidunt unde placeat, dolores assumenda dolore laudantium vel necessitatibus modi accusamus et magni reiciendis veniam? Alias nam error accusamus aut voluptatem voluptatibus incidunt adipisci optio quis dolores delectus cumque consectetur repellat tempore asperiores provident molestiae libero odio ipsum neque id, voluptates esse? Deleniti sapiente saepe pariatur excepturi nostrum fuga dolor et ad ullam aperiam blanditiis ex tenetur, facilis, distinctio nam rem similique. Atque dignissimos doloribus aut incidunt? Lorem ipsum dolor sit amet consectetur adipisicing elit. Incidunt, quis doloremque quae dolore fugit quibusdam saepe obcaecati officia fugiat voluptas? Architecto quia tenetur, fuga et harum dolores. Sed voluptatum itaque, distinctio illum laudantium asperiores soluta quasi consectetur at amet est dicta. Hic a consequuntur omnis amet adipisci doloribus ipsam officia quos reiciendis. Delectus assumenda praesentium, consectetur sequi beatae unde repellat harum, adipisci voluptatibus explicabo nam eum fugiat a, incidunt totam iure neque. A eligendi commodi id unde sapiente tempore esse reprehenderit suscipit, sequi praesentium quisquam voluptate dolorum consectetur blanditiis. Laboriosam maxime, illum ratione porro at nostrum ab dolorum facilis debitis. corporis! Deserunt maiores quam quaerat velit et tempore assumenda minima labore. Doloribus, ex iusto! Esse, quasi quisquam delectus, nemo nobis qui distinctio sint eos tenetur exercitationem aliquam sunt. Modi doloribus exercitationem blanditiis nam quibusdam illum eius hic eos ipsum assumenda dolorum velit cupiditate veritatis aliquid rerum ipsam iure quasi, perferendis reiciendis commodi. Distinctio eligendi reprehenderit tenetur! Voluptatem tempore ullam placeat? Pariatur ipsa magni minus sed cumque beatae soluta voluptas consequatur modi, ipsum possimus blanditiis amet? Libero error aperiam harum saepe fuga? Laborum sit enim reprehenderit illum, suscipit quo assumenda fuga rerum deleniti maxime omnis ullam modi fugiat mollitia sunt voluptatibus, ratione, illo veritatis. Minus, eos earum vitae veritatis debitis dignissimos modi sed repellendus, quam tempora quaerat similique, dolorum repudiandae nulla laboriosam enim perferendis exercitationem.
+    </p>
+
+    <script>
+        function changebg(color){
+                document.body.style.backgroundColor = color;
+                let txt = document.getElementsByClassName('text');
+                if(color == '#000000' ){
+                    for(let elm of txt){
+                        elm.style.color = 'white';
+                    }
+
+                }else{
+                    for(let elm of txt){
+                    elm.style.color = 'black';
+                }
+            }
+        };
+    </script>
+
+</body>
+</html>
